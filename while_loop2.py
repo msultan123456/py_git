@@ -23,37 +23,34 @@ num = 2
 while num <= 20:
     print(num)
     num += 2
-Printing a sequence:
+# Printing a sequence:
 
-python
-Copy code
+# python
+# Copy code
 count = 0
 while count < 5:
     print("Hello")
     count += 1
-Reversing a string:
+# Reversing a string:
 
-python
-Copy code
+
 text = "hello"
 index = len(text) - 1
 while index >= 0:
     print(text[index])
     index -= 1
-Finding factorial:
+# Finding factorial:
 
-python
-Copy code
+
 n = 5
 factorial = 1
 while n > 0:
     factorial *= n
     n -= 1
 print("Factorial:", factorial)
-Finding prime numbers:
+# Finding prime numbers:
 
-python
-Copy code
+
 num = 2
 while num <= 20:
     is_prime = True
@@ -66,10 +63,9 @@ while num <= 20:
     if is_prime:
         print(num)
     num += 1
-User input validation:
+# User input validation:
 
-python
-Copy code
+
 valid = False
 while not valid:
     age = input("Enter your age: ")
@@ -77,48 +73,43 @@ while not valid:
         valid = True
     else:
         print("Please enter a valid age.")
-Fibonacci sequence:
+# Fibonacci sequence:
 
-python
-Copy code
+
 n = 10
 a, b = 0, 1
 while n > 0:
     print(a)
     a, b = b, a + b
     n -= 1
-Printing a triangle:
+# Printing a triangle:
 
-python
-Copy code
+
 rows = 5
 i = 1
 while i <= rows:
     print('*' * i)
     i += 1
-Sum of digits of a number:
+# Sum of digits of a number:
 
-python
-Copy code
+
 num = 12345
 total = 0
 while num > 0:
     total += num % 10
     num //= 10
 print("Sum of digits:", total)
-Multiplication table:
+# Multiplication table:
 
-python
-Copy code
+
 num = 5
 multiplier = 1
 while multiplier <= 10:
     print(num, 'x', multiplier, '=', num * multiplier)
     multiplier += 1
-Binary to decimal conversion:
+# Binary to decimal conversion:
 
-python
-Copy code
+
 binary = '1010'
 decimal = 0
 power = len(binary) - 1
@@ -128,10 +119,9 @@ while index < len(binary):
     power -= 1
     index += 1
 print("Decimal:", decimal)
-Checking palindrome:
+# Checking palindrome:
 
-python
-Copy code
+
 text = "radar"
 is_palindrome = True
 left = 0
@@ -146,19 +136,17 @@ if is_palindrome:
     print("Palindrome")
 else:
     print("Not a palindrome")
-Printing characters in a string:
+# Printing characters in a string:
 
-python
-Copy code
+
 text = "Python"
 index = 0
 while index < len(text):
     print(text[index])
     index += 1
-Finding the largest number in a list:
+# Finding the largest number in a list:
 
-python
-Copy code
+
 numbers = [3, 7, 2, 9, 5]
 max_num = numbers[0]
 index = 1
@@ -167,10 +155,8 @@ while index < len(numbers):
         max_num = numbers[index]
     index += 1
 print("Largest number:", max_num)
-Calculating power:
+# Calculating power:
 
-python
-Copy code
 base = 2
 exponent = 5
 result = 1
@@ -178,10 +164,9 @@ while exponent > 0:
     result *= base
     exponent -= 1
 print("Result:", result)
-Removing duplicates from a list:
+# Removing duplicates from a list:
 
-python
-Copy code
+
 numbers = [1, 2, 2, 3, 4, 4, 5]
 unique_numbers = []
 index = 0
@@ -190,10 +175,9 @@ while index < len(numbers):
         unique_numbers.append(numbers[index])
     index += 1
 print("Unique numbers:", unique_numbers)
-Finding GCD:
+# Finding GCD:
 
-python
-Copy code
+
 def gcd(a, b):
     while b:
         a, b = b, a % b
@@ -201,10 +185,8 @@ def gcd(a, b):
 
 result = gcd(48, 18)
 print("GCD:", result)
-Checking if a number is perfect:
+# Checking if a number is perfect:
 
-python
-Copy code
 num = 28
 sum_divisors = 0
 divisor = 1
@@ -216,10 +198,9 @@ if sum_divisors == num:
     print("Perfect number")
 else:
     print("Not a perfect number")
-Printing a pattern:
+# Printing a pattern:
 
-python
-Copy code
+
 rows = 5
 i = rows
 while i >= 1:
@@ -229,10 +210,9 @@ while i >= 1:
         j += 1
     print()
     i -= 1
-Calculating LCM:
+# Calculating LCM:
 
-python
-Copy code
+
 def lcm(a, b):
     gcd = 1
     temp = a * b
@@ -246,10 +226,8 @@ def lcm(a, b):
 
 result = lcm(4, 5)
 print("LCM:", result)
-Checking Armstrong number:
+# Checking Armstrong number:
 
-python
-Copy code
 num = 153
 order = len(str(num))
 sum = 0
@@ -262,10 +240,9 @@ if num == sum:
     print("Armstrong number")
 else:
     print("Not an Armstrong number")
-Printing a multiplication table using nested while loop:
+# Printing a multiplication table using nested while loop:
 
-python
-Copy code
+
 num = 5
 i = 1
 while i <= 10:
@@ -275,10 +252,9 @@ while i <= 10:
         j += 1
     print()
     i += 1
-Finding sum of series:
+# Finding sum of series:
 
-python
-Copy code
+
 n = 5
 sum = 0
 i = 1
@@ -286,10 +262,9 @@ while i <= n:
     sum += i
     i += 1
 print("Sum of series:", sum)
-Binary search:
+# Binary search:
 
-python
-Copy code
+
 def binary_search(arr, target):
     low = 0
     high = len(arr) - 1
@@ -305,10 +280,9 @@ def binary_search(arr, target):
 
 result = binary_search([2, 3, 5, 7, 9, 11], 7)
 print("Index of target:", result)
-Bubble sort:
+# Bubble sort:
 
-python
-Copy code
+
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n - 1):
@@ -319,10 +293,9 @@ def bubble_sort(arr):
 numbers = [64, 34, 25, 12, 22, 11, 90]
 bubble_sort(numbers)
 print("Sorted array:", numbers)
-Checking leap year:
+# Checking leap year:
 
-python
-Copy code
+
 year = 2024
 if year % 4 == 0:
     if year % 100 == 0:
@@ -334,40 +307,35 @@ if year % 4 == 0:
         print("Leap year")
 else:
     print("Not a leap year")
-Finding factorial using a recursive function:
+# Finding factorial using a recursive function:
 
-python
-Copy code
+
 def factorial(n):
-    if n
-more
-ChatGPT
-Certainly! Here are more examples of Python code using while loops:
+    if n:
 
-Calculating the sum of a series with user input:
+# Certainly! Here are more examples of Python code using while loops:
 
-python
-Copy code
-n = int(input("Enter a number: "))
+# Calculating the sum of a series with user input:
+
+
+        n = int(input("Enter a number: "))
 sum = 0
 i = 1
 while i <= n:
     sum += i
     i += 1
 print("Sum of series:", sum)
-Printing the Fibonacci sequence up to a specified limit:
+# Printing the Fibonacci sequence up to a specified limit:
 
-python
-Copy code
+
 limit = 100
 a, b = 0, 1
 while a <= limit:
     print(a, end=' ')
     a, b = b, a + b
-Calculating the sum of digits of a number until a single digit is obtained:
+# Calculating the sum of digits of a number until a single digit is obtained:
 
-python
-Copy code
+
 num = 9876
 while num >= 10:
     temp = num
@@ -377,10 +345,9 @@ while num >= 10:
         temp //= 10
     num = sum
 print("Single digit sum:", num)
-Generating a random number between 1 and 10 and allowing the user to guess it:
+# Generating a random number between 1 and 10 and allowing the user to guess it:
 
-python
-Copy code
+
 import random
 
 target = random.randint(1, 10)
@@ -392,19 +359,17 @@ while guess != target:
     elif guess > target:
         print("Too high, try again.")
 print("Congratulations! You guessed it.")
-Printing characters of a string in reverse order:
+# Printing characters of a string in reverse order:
 
-python
-Copy code
+
 text = "Python"
 index = len(text) - 1
 while index >= 0:
     print(text[index], end=' ')
     index -= 1
-Simulating a simple ATM with balance checking and withdrawal:
+# Simulating a simple ATM with balance checking and withdrawal:
 
-python
-Copy code
+
 balance = 1000
 while True:
     print("Your balance is:", balance)
@@ -425,10 +390,9 @@ while True:
         break
     else:
         print("Invalid choice. Please try again.")
-Calculating the sum of squares of numbers from 1 to n:
+# Calculating the sum of squares of numbers from 1 to n:
 
-python
-Copy code
+
 n = 5
 sum = 0
 i = 1
@@ -436,10 +400,9 @@ while i <= n:
     sum += i ** 2
     i += 1
 print("Sum of squares:", sum)
-Printing prime numbers up to a specified limit:
+# Printing prime numbers up to a specified limit:
 
-python
-Copy code
+
 limit = 50
 num = 2
 while num <= limit:
@@ -453,10 +416,9 @@ while num <= limit:
     if is_prime:
         print(num, end=' ')
     num += 1
-Calculating the average of numbers entered by the user until a negative number is entered:
+# Calculating the average of numbers entered by the user until a negative number is entered:
 
-python
-Copy code
+
 count = 0
 total = 0
 while True:
@@ -470,10 +432,9 @@ if count > 0:
     print("Average:", average)
 else:
     print("No valid numbers entered.")
-Counting occurrences of a specific character in a string:
+# Counting occurrences of a specific character in a string:
 
-python
-Copy code
+
 text = "banana"
 char = 'a'
 count = 0
@@ -483,10 +444,8 @@ while index < len(text):
         count += 1
     index += 1
 print("Occurrences of", char + ":", count)
-Reversing a number entered by the user:
+# Reversing a number entered by the user:
 
-python
-Copy code
 num = int(input("Enter a number: "))
 reversed_num = 0
 while num > 0:
@@ -494,20 +453,18 @@ while num > 0:
     reversed_num = reversed_num * 10 + digit
     num //= 10
 print("Reversed number:", reversed_num)
-Printing numbers in a specified range in steps of 3:
+# Printing numbers in a specified range in steps of 3:
 
-python
-Copy code
+
 start = 1
 end = 20
 step = 3
 while start <= end:
     print(start, end=' ')
     start += step
-Checking if a number is a power of 2:
+# Checking if a number is a power of 2:
 
-python
-Copy code
+
 num = 16
 power_of_two = True
 while num > 1:
@@ -519,10 +476,9 @@ if power_of_two:
     print("Number is a power of 2.")
 else:
     print("Number is not a power of 2.")
-Generating a multiplication table up to a specified limit:
+# Generating a multiplication table up to a specified limit:
 
-python
-Copy code
+
 limit = 5
 num = 1
 while num <= limit:
@@ -532,10 +488,9 @@ while num <= limit:
         multiplier += 1
     print()
     num += 1
-Calculating the sum of natural numbers divisible by 3 or 5 up to a specified limit:
+# Calculating the sum of natural numbers divisible by 3 or 5 up to a specified limit:
 
-python
-Copy code
+
 limit = 10
 sum = 0
 num = 1
@@ -544,10 +499,9 @@ while num <= limit:
         sum += num
     num += 1
 print("Sum:", sum)
-Generating a pattern using nested loops:
+# Generating a pattern using nested loops:
 
-python
-Copy code
+
 rows = 5
 i = 1
 while i <= rows:
@@ -557,10 +511,9 @@ while i <= rows:
         j += 1
     print()
     i += 1
-Simulating a simple dice rolling game until the user decides to stop:
+# Simulating a simple dice rolling game until the user decides to stop:
 
-python
-Copy code
+
 import random
 
 while True:
@@ -571,10 +524,9 @@ while True:
     if choice != 'y':
         break
 print("Goodbye!")
-Calculating the average of positive numbers entered by the user:
+# Calculating the average of positive numbers entered by the user:
 
-python
-Copy code
+
 count = 0
 total = 0
 while True:
@@ -588,10 +540,9 @@ if count > 0:
     print("Average of positive numbers:", average)
 else:
     print("No positive numbers entered.")
-Calculating the sum of even numbers from 1 to n:
+# Calculating the sum of even numbers from 1 to n:
 
-python
-Copy code
+
 n = 10
 sum = 0
 num = 2
@@ -599,10 +550,9 @@ while num <= n:
     sum += num
     num += 2
 print("Sum of even numbers:", sum)
-Calculating the product of numbers entered by the user until a zero is entered:
+# Calculating the product of numbers entered by the user until a zero is entered:
 
-python
-Copy code
+
 product = 1
 while True:
     num = float(input("Enter a number (0 to stop): "))
@@ -610,10 +560,9 @@ while True:
         break
     product *= num
 print("Product of numbers:", product)
-Printing a right triangle pattern using nested loops:
+# Printing a right triangle pattern using nested loops:
 
-python
-Copy code
+
 rows = 5
 i = 1
 while i <= rows:
